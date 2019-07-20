@@ -16,6 +16,15 @@
   l = input().split()
   ```
 
+  * 입력 받아서 int 로 2개 받기
+  ```
+  l = input().split()
+  a = l[0]
+  b = l[1]
+  print(a+b)
+  ```
+
+
   * 입력 받아서 쪼갠후 정수로 바꾸기
   ```
   l = list(map(int, input().split()))
