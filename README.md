@@ -30,6 +30,25 @@
   l = list(map(int, input().split()))
   ```
 
+* 분기(브랜치, branch)
+  ```
+  if a == 'seoul' :
+   print('korea')
+  elif a == 'seattle' :
+   print('usa')
+  else
+   print('unknown')
+   
+  if a >= 90 :
+   print('A')
+  else a < 90 and a >= 80 :
+   print('B')
+  else a < 80 and a >= 70 :
+   print('C')
+  else
+   print('D')
+  ```
+ 
 * 루프
   * 0에서 10까지 출력 (for)
   ```
