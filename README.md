@@ -54,6 +54,18 @@
   ```
   for i in range(0, 11) :
     print(i)
+
+  # 앞의 0은 생략 가능
+  for i in range(11) :
+    print(i)
+
+  # 두칸씩 건너 뛸 때 
+  for i in range(0, 11, 2) :
+    print(i)
+
+  # -1씩 뒤로 줄어들 때
+  for i in range(0, 11, -1) :
+    print(i)
   ```
 
   * 0에서 10까지 출력 (while)
