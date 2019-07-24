@@ -1,3 +1,0 @@
-# help
-  * test
-  * test1
