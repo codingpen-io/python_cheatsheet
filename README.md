@@ -40,8 +40,23 @@
   * 길이 
   ```
   arr = [1,2,3]
-  len(arr)
+  len(arr) 
+  # 3이 나옵니다.
+
+  # 한줄에서 입력을 받아서 공백(스페이스)으로 분리해서 어레이로 만들기
+  arr = input().split()
+  for(i in range(0, len(arr))) :
+    print(i, arr[i])
   ```
+  
+  * 추가
+  ```
+  arr = []
+  arr.append(1)
+  arr.append(2)
+  # a= [1, 2] 로 추가됨
+  ```
+
 
 * 코멘트
   ```
