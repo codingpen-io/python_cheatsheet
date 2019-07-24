@@ -16,11 +16,39 @@
   l = input().split()
   ```
 
+  * 입력 받아서 int 로 2개 받기
+  ```
+  l = input().split()
+  a = l[0]
+  b = l[1]
+  print(a+b)
+  ```
+
+
   * 입력 받아서 쪼갠후 정수로 바꾸기
   ```
   l = list(map(int, input().split()))
   ```
 
+* 분기(브랜치, branch)
+  ```
+  if a == 'seoul' :
+   print('korea')
+  elif a == 'seattle' :
+   print('usa')
+  else
+   print('unknown')
+   
+  if a >= 90 :
+   print('A')
+  else a < 90 and a >= 80 :
+   print('B')
+  else a < 80 and a >= 70 :
+   print('C')
+  else
+   print('D')
+  ```
+ 
 * 루프
   * 0에서 10까지 출력 (for)
   ```
@@ -67,5 +95,15 @@
   * https://www.python.org/
   * ">_" 가 그려진 노란 버튼 클릭하고 기다리면 실행됨 
 
+* 수학
+  * 제곱
+  ```
+  # 10의 제곱
+  a = 10 ** 2
+  # 10의 3제곱
+  a = 10 ** 2
+  # 3의 2제곱
+  a = 3 ** 2
+  ```  
 * 정답코드
  * 
