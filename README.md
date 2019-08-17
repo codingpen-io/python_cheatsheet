@@ -68,6 +68,16 @@
     print(i)
   ```
 
+  * 약수의 갯수 세기 (for)
+  ```
+  n = int(input())
+  count = 0
+  for i in range(1, n) :
+   if n % i == 0 :
+     count += 1
+  print(count)
+  ```
+
   * 0에서 10까지 출력 (while)
   ```
   i = 0
@@ -75,6 +85,8 @@
     print(i)
     i++
   ```
+  
+
 * 문자열
   * 문자열 s안 에 안에 있는 p 글자 개수 세기
   ```
