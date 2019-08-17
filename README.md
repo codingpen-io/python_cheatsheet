@@ -19,8 +19,8 @@
   * 입력 받아서 int 로 2개 받기
   ```
   l = input().split()
-  a = l[0]
-  b = l[1]
+  a = int(l[0])
+  b = int(l[1])
   print(a+b)
   ```
 
