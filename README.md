@@ -1,5 +1,7 @@
 # python_study
 
+* 파이썬이란?
+ * Guido van Rossum의 (1999) : Computer Programming for Everybody 모두의 프로그래밍
 * 입력
   * 기본 입력 받기
   ```
