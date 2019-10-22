@@ -1,4 +1,4 @@
-# python_study
+# python_cheatsheet
 
 * 파이썬이란?
  * Guido van Rossum의 (1999) : Computer Programming for Everybody 모두의 프로그래밍
@@ -133,6 +133,27 @@
   ```
   # 0 원소가 10개인 어레이 
   arr = [0] * 10
+  ```
+  
+  * 인덱스를 쓰지 않고 원소를 직접 사용
+  ```
+  arr = [1, 2, 3]
+  for n in arr :
+     print(n, end=",")
+  ```
+  ** 출력 결과
+  ```
+  1,2,3,
+  ```
+  ```
+  arr = ['a', 'b', 'c']
+  for n in arr :
+     print(n, end=",")
+  ```
+  
+  ** 출력 결과
+  ```
+  a,b,c,
   ```
 
 * 사전(Dictionary)
