@@ -26,22 +26,22 @@
  
 * 입력
   * 기본 입력 받기
-  ```
+  ```python
   l = input()
   ```
 
   * 입력 받아서 정수로 바꾸기
-  ```
+  ```python
   l = int(input())
   ```
 
   * 입력 받아서 쪼개기
-  ```
+  ```python
   l = input().split()
   ```
 
   * 입력 받아서 int 로 2개 받기
-  ```
+  ```python
   l = input().split()
   a = int(l[0])
   b = int(l[1])
@@ -50,12 +50,12 @@
 
 
   * 입력 받아서 쪼갠후 정수로 바꾸기
-  ```
+  ```python
   l = list(map(int, input().split()))
   ```
 
 * 분기(브랜치, branch)
-  ```
+  ```python
   if a == 'seoul' :
    print('korea')
   elif a == 'seattle' :
@@ -75,7 +75,7 @@
  
 * 루프
   * 0에서 10까지 출력 (for)
-  ```
+  ```python
   for i in range(0, 11) :
     print(i)
 
@@ -93,7 +93,7 @@
   ```
 
   * 약수의 갯수 세기 (for)
-  ```
+  ```python
   n = int(input())
   count = 0
   for i in range(1, n+1) :
@@ -103,7 +103,7 @@
   ```
 
   * 0에서 10까지 출력 (while)
-  ```
+  ```python
   i = 0
   while i > 10 :
     print(i)
@@ -132,7 +132,7 @@
 * 리스트
   * 인덱스와 값으로 이뤄져 있습니다. 인덱스는 0부터 시작해서 1씩 증가하는 숫자입니다. 0번 인덱스의 값은 첫번째 값이 됩니다.
   * 길이 
-  ```
+  ```python
   arr = [1,2,3]
   len(arr) 
   # 3이 나옵니다.
@@ -144,7 +144,7 @@
   ```
   
   * 추가
-  ```
+  ```python
   arr = []
   arr.append(1)
   arr.append(2)
@@ -152,19 +152,19 @@
   ```
   
   * 여러개 생성
-  ```
+  ```python
   # 0 원소가 10개인 어레이 
   arr = [0] * 10
   ```
   
   * 인덱스를 쓰지 않고 원소를 직접 사용
-  ```
+  ```python
   arr = [1, 2, 3]
   for n in arr :
      print(n, end=",")
   ```
   ** 출력 결과
-  ```
+  ```python
   1,2,3,
   ```
   ```
@@ -174,39 +174,39 @@
   ```
   
   ** 출력 결과
-  ```
+  ```python
   a,b,c,
   ```
 
 * 사전(Dictionary)
   * 키와 밸류(값)으로 이뤄져있습니다. 리스트와 달리 순서가 없고, 인덱스는 0부터 시작하는 정수지만, 키는 아무글자나 숫자가 와도 됩니다. 말그대로 사전에서 키(단어)를 찾으면 밸류(뜻)이 나오는 것과 같습니다.
   * 선언
-  ```
+  ```python
   # 이름이 sword(칼)이고, damage(데미지)가 200인 아이템을 다음과 같이 선언
   d = { 'name' : 'sword', 'damage' : 200 }
   ```
 
   * 값 가져오기
-  ```
+  ```python
   print(d['name'])
   print(d['age'])
   ```
   * 한바퀴 돌기(방문하기)
-  ```
+  ```python
   for k in d :
     print(k, d[k])
   ```
   * 키가 있는지 확인하기
-  ```
+  ```python
   if 'name' in d :
     print('name이란 키가 있습니다.')
   else :
     print('name이란 키가 없습니다.')
-  ```
+  ```python
 
 * 소숫점 출력
   * %.2는 소수 2자라끼지만 출력하라는 뜻.
-  ```
+  ```python
   print("%.2f" % 3.3333)
   # 3.33 이 출력됩니다.
   print("%.3f" % 3.3333)
@@ -215,7 +215,7 @@
 
 
 * 코멘트
-  ```
+  ```python
   # 실제 작동하지 않고 설명문을 적음
   ```  
 
@@ -225,7 +225,7 @@
 
 * 수학
   * 제곱
-  ```
+  ```python
   # 10의 제곱
   a = 10 ** 2
   # 10의 3제곱
