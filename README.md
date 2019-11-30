@@ -204,7 +204,7 @@
   
   * Sort(소트) 정렬하기(크기대로 순서를 바꾸는 것)
   ```python
-  arr = [1, 5, 3, 2, 7];
+  arr = [1, 5, 3, 2, 7]
   arr.sort()
   print(arr)  
   ```
@@ -215,13 +215,27 @@
 
   * 리버스(순서를 반대로 뒤집는 것)
   ```python
-  arr = [1, 2, 3];
+  arr = [1, 2, 3]
   arr.reverse()
   print(arr)  
   ```
   ** 출력 결과
   ```python
   [3, 2, 1]
+  ```
+  
+  * 전체 지우기
+  ```python
+  arr = [1, 2, 3]
+  arr.clear()
+  ```
+
+  * 인덱스의 원소 지우기
+  ```python
+  arr = [1, 2, 3]
+  arr.pop(0)   # 맨 처음 원소 지우기
+  arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
+  
   ```
 
 * 사전(Dictionary)
