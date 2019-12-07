@@ -310,11 +310,17 @@
   arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
   ```
 
-  * 인덱스의 원소 지우기
+  * 원소의 값을 찾아서 지우기
   ```python
-  arr = [1, 2, 3]
-  arr.pop(0)   # 맨 처음 원소 지우기
-  arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
+  arr = [10, 11, 12]
+  arr.remove(11)
+  print(arr)
+  [10, 12]
+
+  arr = ['a', 'b', 'c']
+  arr.remove('b')
+  print(arr)
+  ['a', 'c']
   ```  
   
   * 인덱스에 원소 추가 
