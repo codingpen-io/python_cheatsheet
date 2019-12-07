@@ -253,7 +253,42 @@
   arr = [1, 2, 3]
   arr.pop(0)   # 맨 처음 원소 지우기
   arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
+  ```
+
+  * 인덱스의 원소 지우기
+  ```python
+  arr = [1, 2, 3]
+  arr.pop(0)   # 맨 처음 원소 지우기
+  arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
+  ```  
   
+  * 인덱스에 원소 추가 
+  ```python
+  arr = [1, 2, 3]
+  arr.insert(1, 7)   # 두번째 자리에 원소 집어 넣기
+  print(arr)
+  [1, 7, 2, 3]
+  ```
+  
+  * 리스트를 문자열로 합치기
+  ```python
+  arr=['2019', '12', '25]
+  arr.join(':')
+  print(arr)
+  '209:12:25'
+  ```
+
+  * 문자열을 리스트로 분리하기
+  ```python
+  # 아무것도 인자로 주지 않으면 공백을 이용해서 문자열 분리
+  str = 'I like python'
+  arr = str.split()
+  print(arr)
+  # 인자를 주면 그 문자열을 구분자로 사용해서 분리
+  arr= '2019:12:25'
+  arr.split(':')
+  print(arr)
+  ['2019', '12', '25]
   ```
 
 * 사전(Dictionary)
