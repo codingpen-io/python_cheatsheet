@@ -542,6 +542,15 @@
 
   ````
 
+  - 키 제거하기
+
+  ```python
+  >>> dic = {"name" : "jin"}
+  >>> del dic["name"]
+  >>> dic
+  {}
+  ```
+
 ---
 
 - Random
