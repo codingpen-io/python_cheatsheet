@@ -610,6 +610,13 @@ b
   >>> format(3.1, ".5f")
   3.10000
   ```
+  # sin, cos
+  ```python
+  import math
+  
+  print(math.sin(math.pi/4)
+  print(math.cos(math.pi/2)
+  ```
 
 * 더 자세한 Python 내장함수
   https://docs.python.org/ko/3/library/functions.html?highlight=round#format
