@@ -335,6 +335,7 @@
     print(sr)
     ```
 
+<<<<<<< HEAD
     - 문자열 치환
 
     ```python
@@ -372,6 +373,24 @@
     >>> ''.join(s)
     '012345'
     ```
+=======
+  - 부분 문자열
+
+    ```
+    >>> s = 'AM 12:34'
+    >>> s[0:2]
+    'AM'
+    >>> s[3:]
+    '12:34'
+    >>> s[:2]
+    'AM'
+    
+    # 'cba'가 출력됩니다.
+    print(sr)
+    ```
+
+  
+>>>>>>> 441d53feb8ada8c8442d1459f94b8cecfa0f4d7d
 
 ---
 
@@ -663,8 +682,15 @@ b
   >>> round(3.1415, 3)
   3.141
   # 소수점 자리 지정, 반올림을 하지 않고 그냥 버리는 점이 round()와 다르다.
-  >>> format(3.1, ".5")
+  >>> format(3.1, ".5f")
   3.10000
+  ```
+  # sin, cos
+  ```python
+  import math
+  
+  print(math.sin(math.pi/4)
+  print(math.cos(math.pi/2)
   ```
 
 * 더 자세한 Python 내장함수
