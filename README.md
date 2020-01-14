@@ -587,18 +587,48 @@ print(arr)
 
 - range로 list 만들기
   - python2에서는 range가 list를 돌려주나, python3부터는 range타입이 돌려주므로 list함수로 한번 더 감싸야 한다.
-    ```
-    arr = list(range(0, 3))
-    print(arr)
-    [0, 1, 2]
-    ```
+  ```python
+  arr = list(range(0, 3))
+  print(arr)
+  [0, 1, 2]
+  ```
+- 리스트 컴프리헨션(List comprehension)
+
+  - 리스트를 for문을 안쓰고 짧게 한줄에 만드는 법
+
+  ```python
+  # 0에서 10까지 리스트
+  >>> [x for x in range(1, 11)]
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  # 짝수 리스트
+  >>> [x*2 for x in range(1, 11)]
+  [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+  # 홀수 리스트
+  >>> [x*2+1 for x in range(1, 11)]
+  [3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+
+  # 중첩 리스트
+  >>> [ [x*2, y*2+1] for x in range(1, 3) for y in range(1, 3)]
+  [[2, 3], [2, 5], [4, 3], [4, 5]]
+
+  # x를 중복 사용이 가능
+  >>> [[x, x*x] for x in range(1, 3)]
+  [[1, 1], [2, 4]]
+
+  # 중첩 리스트 (조건식으로 필터된)
+  >>> [ [x*2, y*2+1] for x in range(1, 3) for y in range(1, 3) if x + y > 2]
+  [[2, 5], [4, 3], [4, 5]]
+  ```
+
 - list 와 set의 차이
 
   - list 는 appned 함수로 추가, set는 add로 추가, 삭제는 둘 다 remove로 같다
   - list 는 같은 값의 원소 중복 허용, set은 같은 값인 경우 중복이 되지 않고, 기존 값이 대치됨
   - set은 인덱스가 없으므로 원소 접근시 list()함수로 변환해서 써야함.
 
-    ```
+    ```python
     >> s = {1,,2,3,3,3}
     >> s
     {1,2,3}
@@ -606,7 +636,7 @@ print(arr)
 
     - 위 예를 보면 중복되는 3은 하나로 나옴
 
-    ```
+    ```python
     # 교집합
     >> {1, 2, 3} & { 2, 3, 4}
     {2, 3}
