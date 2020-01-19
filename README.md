@@ -491,6 +491,20 @@ print(arr)
   2019:12:25
   ```
 
+- 리스트 안에 원소가 있는 지 검사
+
+  ```python
+  >>> arr = [1, 2, 3]
+  >>> print(1 in arr)
+  True
+  >>> print(10 in arr)
+  False
+  >>> if 1 in arr:
+  ...    print('1')
+  ...
+  1
+  ```
+
 - Sort(소트) 정렬하기(크기대로 순서를 바꾸는 것)
 
   ```python
