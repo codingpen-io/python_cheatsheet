@@ -411,6 +411,7 @@
   ```
 
 * 대소문자 변환
+
   ```python
   >>> s = "a"
   # 소문자 a와 대문자 A사이의 아스키코드 차이값을 구한다.
@@ -426,6 +427,39 @@
   >>> chr(ord(s[0]) + diff)
   >>> s
   'a'
+  ```
+
+* 문자열 포맷팅(Formatting)
+  - python 3.6 부터 도입된 f string을 쓰는게 가장편함
+  ```python
+  >>> n = 15
+  >>> print(f"result is {n}")
+  result is 15
+  >>> print(f"n:{n} 2*n:{2*n} n*n:{n*n} hex:{n:x} HEX:{n:X} octal:{n:o} binary:{n:b}")
+  n:15 2*n:30 n*n:225 hex:f HEX:F octal:17 binary:1111
+  # hex : hexadecimal 16진수
+  # octal : 8진수
+  # binary : 16진수
+  >>> s = "hello"
+  # 왼쪽 정렬 : <
+  # 오른쪽 정렬 : >
+  # 가운데 정렬 : ^
+  >>> print(f"{s:<10}{s:>10}{s:^10}\n" + "0123456789"*3)
+  hello          hello  hello
+  012345678901234567890123456789
+  >> n= 6
+  >>> print(f"{s:<{n}}{s:>{n}}{s:^{n}}\n" + "01234567"*3)
+  hello      hello hello
+  012345670123456701234567
+  # 변수로 너비 지정하기
+  >>> n = 7
+  >>> w = 8
+  >>> print(f"_{n:>{w}b}_{n:<{w}b}_")
+  _ 111_111 _
+  # 소숫점 자르기
+  >>> p = 3.14159
+  >>> print(f"{p:.2f}")
+  3.14
   ```
 
 ````
