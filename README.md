@@ -198,6 +198,8 @@
 
   ```python
   l = list(map(int, input().split()))
+  # 리스트 컴프리헨션을 이용해도 똑같이 된다.
+  l =  [int(x) for x in input().split()]
   ```
 
 - 분기(브랜치, branch)
@@ -401,6 +403,20 @@
   97
   >>> ord(s[1])
   65
+  ```
+
+* 문자열 전체를 소문자/대문자로
+  ```python
+  >>> 'abc'.upper()
+  'ABC'
+  >>> 'Abc'.lower()
+  'abc'
+  ```
+
+* 문자열 앞 뒤의 공백 없애기
+  ```python
+  >>> ' abc '.strip()
+  'abc'
   ```
 
 * 아스키코드(10진수)를 문자열로
