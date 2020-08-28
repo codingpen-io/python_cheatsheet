@@ -836,3 +836,47 @@ b
 # 더 자세한 Python 내장함수
 
 https://docs.python.org/ko/3/library/functions.html?highlight=round#format
+
+
+# 정렬 고급
+    * 리스트 원소로 사진을 가진 경우의 1개의 키로 정렬
+    * 리스트 원소로 사진을 가진 경우의 2개의 키로 정렬
+
+```python
+import json
+arr = []
+
+arr.append({
+    'name': 'jin',
+    'score': 10,
+    'age': 10
+})
+
+arr.append({
+    'name': 'cho',
+    'score': 10,
+    'age': 9
+})
+
+arr.append({
+    'name': 'joa',
+    'score': 8,
+    'age': 8
+})
+
+#print(json.dumps(arr, indent=2))
+
+# 리스트 원소로 사진을 가진 경우의 1개의 키로 정렬   
+# 점수만 높은 사람이 뒤에 오게
+arr1 = sorted(arr, key=lambda x: x['score'])
+print(json.dumps(arr1, indent=2))
+
+# 리스트 원소로 사진을 가진 경우의 2개의 키로 정렬
+# 점수가 높은 사람이 뒤에 오고 같은 점수이면 나이가 높은 사람이 뒤에 오게
+arr2 = sorted(arr, key=lambda x: (x['score'], x['age']))
+print(json.dumps(arr2, indent=2))
+
+# 점수가 높은 사람이 뒤에 오고 같은 점수이면 나이가 낮은 사람이 뒤에 오게
+arr2 = sorted(arr, key=lambda x: (x['score'], -x['age']))
+print(json.dumps(arr2, indent=2))
+```
