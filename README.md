@@ -889,3 +889,9 @@ print(json.dumps(arr2, indent=2))
 arr2 = sorted(arr, key=lambda x: (x['score'], -x['age']))
 print(json.dumps(arr2, indent=2))
 ```
+
+- 3항 연산자 
+```python
+>>> direction = 'Left' if a > b else 'Right'
+```
+
