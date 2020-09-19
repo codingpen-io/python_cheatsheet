@@ -1,6 +1,7 @@
 # 동영상 강의
 - https://www.youtube.com/channel/UCpYoOobn3VrPwqNu-NlfAOA
 
+
 # python_cheatsheet
 
 - 파이썬이란?
