@@ -586,6 +586,15 @@ print(arr)
   # 출력 결과
   [3, 2, 1]
   ```
+- 역순으로 순회하기
+  ```python
+  arr = [1, 2, 3]
+  for x in arr[::-1]:
+    print(x)
+
+  for i in range(len(arr)):
+    print(arr[len(arr)-1-i])
+  ```
 
 - 인덱스의 원소 합계 구하기
   ```
@@ -604,8 +613,11 @@ print(arr)
 
   ```python
   arr = [1, 2, 3]
-  arr.pop(0)   # 맨 처음 원소 지우기
-  arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
+  a = arr.pop(0)   # 맨 처음 원소 지우기
+  a = arr.pop(len(arr)-1) # 맨 뒤 원소 지우기
+  # 혹은 아래처럼 해도 된다.
+  # pop은 삭제되는 값을 돌려주고, del 은 그냥 삭제만 한다.
+  del arr[1]
   ```
 
 - 원소의 값을 찾아서 지우기
