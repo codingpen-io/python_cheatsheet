@@ -924,3 +924,18 @@ print(json.dumps(arr2, indent=2))
 >>> direction = 'Left' if a > b else 'Right'
 ```
 
+- 파일로 표준 입력 받기
+```python
+# 아래와 같이 하면 input.txt 파일을 읽어들여서 입력으로 사용하게 되므로
+# 직접 입력을 하지 않아도 되서 대량 테스트를 할 때 편하다.
+import sys
+sys.stdin = open('input.txt', 'rt')
+```
+
+- 파일로 표준 출력을 내보내기
+  - 이건 python이 아니라 유닉스 사용법
+  ```sh
+  # test.py를 실행하고 그 출력을 out.txt 파일에 저장한다.
+  python3 test.py >> out.txt
+  ```
+
