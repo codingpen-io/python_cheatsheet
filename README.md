@@ -934,8 +934,8 @@ sys.stdin = open('input.txt', 'rt')
 
 - 파일로 표준 출력을 내보내기
   - 이건 python이 아니라 유닉스 사용법
+  - test.py를 실행하고 그 출력을 out.txt 파일에 저장한다.
   ```sh
-  # test.py를 실행하고 그 출력을 out.txt 파일에 저장한다.
-  python3 test.py >> out.txt
+  $ python3 test.py >> out.txt
   ```
 
