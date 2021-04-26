@@ -933,7 +933,14 @@ sys.stdin = open('input.txt', 'rt')
 ```
 
 - 파일로 표준 출력을 내보내기
-- 이건 python이 아니라 유닉스 사용법
+```python
+# 화면에 출력하지 않고, 파일 out.txt로 출력을 보냄
+# w 는 write, t는 text mode (참고 :b는 binary 모드), t와 b 2가지가 있음
+import sys
+sys.stdout = open('out.txt', 'wt')
+```
+
+- 다른 방법. 이건 python이 아니라 유닉스 사용법
 - test.py를 실행하고 그 출력을 out.txt 파일에 저장한다.
 ```sh
 $ python3 test.py >> out.txt
